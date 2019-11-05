@@ -10,7 +10,7 @@
 </form>
 
 <?php
-$query = "SELECT * FROM student";
+$query = "SELECT * FROM vote";
 $result = mysqli_query($conn, $query);
 $numero= mysqli_num_rows($result);
 echo $numero;
