@@ -10,9 +10,12 @@
 </form>
 
 <?php
-$query = "SELECT * FROM vote";
-$result = mysqli_query($conn, $query);
-$numero= mysqli_num_rows($result);
-echo $numero;
-?>
+  $query = "SELECT * FROM vote";
+  $result = mysqli_query($conn, $query);
+  $numero= mysqli_num_rows($result);
+ 
+  if($numero>10){ ?>
+    <h1><?php echo $numero; ?></h1>
+    <?php } ?>
+
 <?php include('includes/footer.php'); ?>
