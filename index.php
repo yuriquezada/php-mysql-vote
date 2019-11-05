@@ -4,7 +4,9 @@
 
 <h1>Probando turismoi</h1>
 <form action="save.php" method="POST">
-  <input type="submit" name="reply" class="btn btn-success btn-block" value="si">
+  <input type="submit" name="reply" class="btn btn-success btn-block" value="yes">
+  <input type="submit" name="reply" class="btn btn-success btn-block" value="no">
+  <input type="submit" name="reply" class="btn btn-success btn-block" value="null">
 </form>
 
 
