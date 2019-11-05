@@ -9,5 +9,10 @@
   <input type="submit" name="reply" class="btn btn-success btn-block" value="null">
 </form>
 
-
+<?php
+$query = "SELECT * FROM student";
+$result = mysqli_query($conn, $query);
+$numero= mysqli_num_rows($result);
+echo $numero;
+?>
 <?php include('includes/footer.php'); ?>
